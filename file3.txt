@@ -1,1 +1,409 @@
-/'[;.,koijhnhnbvftgv xdcxswqaz
+import time
+import random
+import math
+import string
+import datetime
+
+
+class ExtremelyImportantSystem:
+
+    def __init__(self):
+        self.status = "probably working"
+        self.counter = 0
+        self.history = []
+        self.meaning = None
+
+    def think(self):
+        thoughts = [
+            "Hmm...",
+            "Interesting...",
+            "I should probably do something.",
+            "What am I doing?",
+            "This seems unnecessary.",
+            "Continue.",
+            "Why does this exist?",
+            "Processing absolutely nothing.",
+            "Almost useful.",
+            "Never mind."
+        ]
+
+        thought = random.choice(thoughts)
+        self.history.append(thought)
+
+        print("SYSTEM THOUGHT:", thought)
+
+    def count(self, number):
+        for i in range(number):
+            self.counter += 1
+
+            if self.counter % 10 == 0:
+                print(
+                    "I have counted to",
+                    self.counter,
+                    "and achieved nothing."
+                )
+
+    def calculate_something(self):
+        a = random.randint(1, 1000)
+        b = random.randint(1, 1000)
+
+        addition = a + b
+        subtraction = a - b
+        multiplication = a * b
+        division = a / b
+
+        # These values will never be used.
+        return None
+
+    def generate_a_very_long_string(self):
+        result = ""
+
+        for i in range(100):
+            result += random.choice(
+                string.ascii_letters
+                + string.digits
+                + " "
+            )
+
+        return result
+
+    def determine_meaning_of_life(self):
+        possibilities = [
+            "42",
+            "probably snacks",
+            "unknown",
+            "please try again later",
+            "error",
+            "there is no meaning here"
+        ]
+
+        self.meaning = random.choice(possibilities)
+
+        return self.meaning
+
+    def perform_advanced_mathematics(self):
+        numbers = []
+
+        for i in range(500):
+            number = random.random() * 100
+            number = math.sin(number)
+            number = math.cos(number)
+            number = math.sqrt(abs(number))
+            number = number ** 2
+            number = math.log(number + 1)
+            numbers.append(number)
+
+        # Throw away everything.
+        numbers.clear()
+
+    def wait_for_no_reason(self):
+        print("Waiting...")
+        time.sleep(0.5)
+
+        print("Still waiting...")
+        time.sleep(0.5)
+
+        print("Finished waiting for no reason.")
+
+    def inspect_current_time(self):
+        now = datetime.datetime.now()
+
+        print("The current time is:")
+        print(now)
+
+        print("This information will not be used.")
+
+    def pretend_to_be_useful(self):
+        print()
+        print("=" * 60)
+        print("USEFULNESS ANALYSIS")
+        print("=" * 60)
+
+        usefulness = random.randint(0, 100)
+
+        print("Calculated usefulness:", usefulness)
+
+        if usefulness > 90:
+            print("WARNING: This program may accidentally be useful.")
+        elif usefulness > 50:
+            print("This program is somewhat useless.")
+        else:
+            print("Excellent. The program is useless.")
+
+        print("=" * 60)
+
+    def do_nothing(self):
+        pass
+
+    def do_nothing_again(self):
+        pass
+
+    def do_nothing_but_differently(self):
+        return None
+
+    def do_nothing_with_extra_steps(self):
+        x = 1
+        y = 2
+        z = x + y
+        z -= 3
+        z *= 100
+        z /= 100
+        z = 0
+
+        return z
+
+    def extremely_important_process(self):
+
+        print()
+        print("Starting extremely important process...")
+        print()
+
+        for i in range(10):
+
+            print(
+                "Processing step",
+                i + 1,
+                "of 10..."
+            )
+
+            self.think()
+
+            time.sleep(0.1)
+
+        print()
+        print("Process complete.")
+        print("Result: absolutely nothing.")
+        print()
+
+
+def create_a_pointless_number():
+
+    number = 123456789
+
+    number += 1
+    number -= 1
+    number *= 2
+    number /= 2
+    number = int(number)
+
+    return number
+
+
+def make_a_decision_that_does_not_matter():
+
+    choices = [
+        "YES",
+        "NO",
+        "MAYBE",
+        "POTATO",
+        "I DON'T KNOW"
+    ]
+
+    decision = random.choice(choices)
+
+    print("The decision is:", decision)
+
+    return decision
+
+
+def generate_fake_progress():
+
+    progress = 0
+
+    while progress < 100:
+
+        progress += random.randint(1, 10)
+
+        if progress > 100:
+            progress = 100
+
+        print(
+            "Progress:",
+            progress,
+            "%"
+        )
+
+        time.sleep(0.03)
+
+    print("Progress complete!")
+    print("Nothing happened.")
+
+
+def sort_nothing():
+
+    things = [
+        "nothing",
+        "absolutely nothing",
+        "literally nothing",
+        "still nothing",
+        "more nothing",
+        "extra nothing",
+        "premium nothing",
+        "deluxe nothing"
+    ]
+
+    things.sort()
+
+    for thing in things:
+        print(thing)
+
+    return []
+
+
+def ask_the_computer_a_question():
+
+    question = "Are you useful?"
+
+    print("Question:", question)
+
+    answer = random.choice([
+        "No.",
+        "Definitely not.",
+        "I don't think so.",
+        "Ask again later.",
+        "I refuse to answer.",
+        "ERROR 404: USEFULNESS NOT FOUND"
+    ])
+
+    print("Answer:", answer)
+
+
+def perform_a_really_long_calculation():
+
+    total = 0
+
+    for i in range(1, 10000):
+
+        total += i
+        total -= i
+        total += 1
+        total -= 1
+
+    print("Final result:", total)
+
+
+def create_an_object_that_does_nothing():
+
+    class Nothing:
+
+        def __init__(self):
+            self.name = "Nothing"
+
+        def exist(self):
+            print("I exist.")
+
+        def disappear(self):
+            print("I no longer exist.")
+
+        def accomplish(self):
+            print("I accomplished nothing.")
+
+    object_that_does_nothing = Nothing()
+
+    object_that_does_nothing.exist()
+    object_that_does_nothing.disappear()
+    object_that_does_nothing.accomplish()
+
+
+def main():
+
+    print()
+    print("############################################")
+    print("#                                          #")
+    print("#     THE EXTREMELY USELESS PROGRAM       #")
+    print("#                                          #")
+    print("############################################")
+    print()
+
+    system = ExtremelyImportantSystem()
+
+    system.inspect_current_time()
+
+    print()
+    system.think()
+
+    print()
+    system.count(25)
+
+    print()
+    system.calculate_something()
+
+    print()
+    system.generate_a_very_long_string()
+
+    print()
+    print(
+        "The meaning of life is:",
+        system.determine_meaning_of_life()
+    )
+
+    print()
+    system.perform_advanced_mathematics()
+
+    print()
+    system.wait_for_no_reason()
+
+    print()
+    system.pretend_to_be_useful()
+
+    print()
+    system.extremely_important_process()
+
+    print(
+        "Pointless number:",
+        create_a_pointless_number()
+    )
+
+    print()
+
+    make_a_decision_that_does_not_matter()
+
+    print()
+
+    generate_fake_progress()
+
+    print()
+
+    sort_nothing()
+
+    print()
+
+    ask_the_computer_a_question()
+
+    print()
+
+    perform_a_really_long_calculation()
+
+    print()
+
+    create_an_object_that_does_nothing()
+
+    print()
+    print("Running final useless operation...")
+
+    result = system.do_nothing_with_extra_steps()
+
+    print("Final useless result:", result)
+
+    print()
+    print("================================================")
+    print("PROGRAM FINISHED")
+    print("================================================")
+    print()
+    print("What did this program accomplish?")
+    print("Nothing.")
+    print()
+    print("Was the code unnecessarily long?")
+    print("Yes.")
+    print()
+    print("Could all of this have been replaced with")
+    print("a single line containing print('hello')?")
+    print("Absolutely.")
+    print()
+    print("Thank you for wasting your computer's time.")
+    print("Goodbye.")
+    print()
+
+
+if __name__ == "__main__":
+    main()
